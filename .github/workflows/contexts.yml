@@ -4,5 +4,5 @@ jobs:
   print:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "${{ github.actor }}"    #githubコンテキストの参照
-      - run: echo "${{ github.event }}"    #github.eventのプロパティ参照
+      - run: echo "${{ github.actor }}"                       #githubコンテキストの参照
+      - run: echo "${{ github.event.pull_requset.title }}"    #github.eventのプロパティ参照
