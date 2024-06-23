@@ -1,0 +1,11 @@
+name: Compare fucitons
+on: push
+jobs:
+  compare:
+    runs-on: ubuntu-latest
+    steps:
+      - run: printenv | grep '_FUNC'
+        env:
+          CONTAINS_FANC: ${{ contains('Hello','ell') }}   #[ell]を含むか
+          STARTS_FANC: ${{ startsWith('Hello','He') }}    #[He]で始まるか
+          ENDS_FUNC: ${{ endsWith('Hello','lo') }}        #[lo]で終わるか
