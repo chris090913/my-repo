@@ -1,5 +1,7 @@
 name: Contexts
-on: push
+on:
+  push:
+    paths: "contexts.yml"
 jobs:
   print:
     runs-on: ubuntu-latest

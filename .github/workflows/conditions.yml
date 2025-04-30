@@ -1,5 +1,7 @@
 name: Conditions
-on: push
+on:
+  push:
+    paths: "conditons.yml"
 jobs:
   skip-or-run:
     runs-on: ubuntu-latest

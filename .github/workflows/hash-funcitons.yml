@@ -1,5 +1,7 @@
 name: Hash functions
-on: push
+on:
+  push:
+    paths: "hash-functions.yml"
 jobs:
   hash:
     runs-on: ubuntu-latest

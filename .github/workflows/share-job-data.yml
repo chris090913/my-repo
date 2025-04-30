@@ -1,5 +1,7 @@
 name: Share job data
-on: push
+on:
+  push:
+    paths: "share-job-data.yml"
 jobs:
   before:
     runs-on: ubuntu-latest

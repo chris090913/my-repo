@@ -1,5 +1,7 @@
 name: JSON Functions
-on: push
+on:
+  push:
+    paths: "json-functions.yml"
 jobs:
   dump:
     runs-on: ubuntu-latest

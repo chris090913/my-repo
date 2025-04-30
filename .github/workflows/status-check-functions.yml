@@ -1,5 +1,7 @@
 name: Status check functions
-on: push
+on:
+  push:
+    paths: "status-check-functions.yml"
 jobs:
   fail:
     runs-on: ubuntu-latest

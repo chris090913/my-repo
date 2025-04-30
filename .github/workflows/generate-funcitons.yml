@@ -1,5 +1,7 @@
 name: Generate Functions
-on: push
+on:
+  push:
+    paths: "generate-functions.yml"
 jobs:
   generate:
     runs-on: ubuntu-latest
