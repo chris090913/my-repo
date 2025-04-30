@@ -1,5 +1,7 @@
 name: Literals
-on: push
+on:
+  push:
+    paths: "literals.yml"
 jobs:
   print:
     runs-on: ubuntu-latest

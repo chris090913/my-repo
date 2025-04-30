@@ -1,6 +1,8 @@
 name: Run name
 run-name: Run by @${{ github.actor }}   #ワークフロー実行名の指定
-on: push
+on:
+  push:
+    paths: "run-name.yml"
 jobs:
   print:
     runs-on: ubuntu-latest

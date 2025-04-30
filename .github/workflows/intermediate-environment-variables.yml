@@ -1,5 +1,7 @@
 name: Intermediate environment variables
-on: push
+on:
+  push：
+    paths: "intermediate-environment-variables.yml
 jobs:
   print:
     runs-on: ubuntu-latest

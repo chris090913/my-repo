@@ -1,5 +1,7 @@
 name: Environment variables
-on: push
+on:
+ push:
+    paths: "environment-variables.yml"
 jobs:
   run:
     runs-on: ubuntu-latest

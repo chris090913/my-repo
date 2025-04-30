@@ -1,5 +1,7 @@
 name: Override environment variables
-on: push
+on:
+  push:
+    paths: "override-environment-variables.yml"
 env:
   EXAMPLE: Defined by workflow level      #ワークフローレベルで環境変数を定義
 jobs:

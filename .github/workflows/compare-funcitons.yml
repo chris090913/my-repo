@@ -1,5 +1,7 @@
 name: Compare functions
-on: push
+on:
+  push:
+    paths: "compare-functions-yml"
 jobs:
   compare:
     runs-on: ubuntu-latest

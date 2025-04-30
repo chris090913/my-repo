@@ -1,5 +1,7 @@
 name: GITHUB_OUTPUT
-on: push
+on:
+  push:
+    paths: "github-output.yml"
 jobs:
   share:
     runs-on: ubuntu-latest
