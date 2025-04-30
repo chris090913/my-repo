@@ -1,8 +1,6 @@
 name: Artifacts
 on:
   push:
-    paths:  
-      - 'artifacts.yml'  
 jobs:
   upload:
     runs-on: ubuntu-latest
